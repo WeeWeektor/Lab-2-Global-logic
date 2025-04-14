@@ -194,7 +194,7 @@ static void MX_TIM4_Init(void)
     Error_Handler();
   }
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 514;
+  sConfigOC.Pulse = 852;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
   if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
@@ -202,7 +202,7 @@ static void MX_TIM4_Init(void)
     Error_Handler();
   }
 
-  sConfigOC.Pulse = 1029;
+  sConfigOC.Pulse = 1028;
   if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
   {
      Error_Handler();
